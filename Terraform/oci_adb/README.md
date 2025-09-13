@@ -1,14 +1,11 @@
 How to run
 
-Copy files into adb-terraform folder
-cd adb-terraform
+- Copy files into adb-terraform folder
+- cd adb-terraform
 
-# (Optional) Set OCI config/profile env if not using defaults
-# export OCI_CLI_PROFILE=DEFAULT
-
-terraform init
-terraform plan   -var-file=terraform.tfvars
-terraform apply  -var-file=terraform.tfvars
+- terraform init
+- terraform plan   -var-file=terraform.tfvars
+- terraform apply  -var-file=terraform.tfvars
 
 
 After apply:
