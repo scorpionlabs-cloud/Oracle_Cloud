@@ -1,14 +1,14 @@
 How to use
 
 # 1) Save files in a folder, then:
-terraform init
+- terraform init
 
 # 2) Review and adjust variables in terraform.tfvars
 #    Ensure your ~/.oci/config has the chosen profile.
 
 # 3) Plan and apply
-terraform plan
-terraform apply
+- terraform plan
+- terraform apply
 
 Notes:
 - Private subnet only: DB node gets no public IP. Access it via bastion/VPN. Adjust nsg_ingress_cidrs to your secure CIDRs.
