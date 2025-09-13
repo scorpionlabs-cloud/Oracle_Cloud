@@ -1,0 +1,13 @@
+region            = "ap-singapore-1"
+compartment_ocid  = "ocid1.compartment.oc1..aaaa...your_compartment_ocid"
+ssh_public_key    = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... yourname@host"
+
+# Optional overrides:
+# instance_display_name = "web-01"
+# shape                 = "VM.Standard3.Flex"
+# ocpus                 = 2
+# memory_in_gbs         = 8
+# assign_public_ip      = true
+# boot_volume_size_gbs  = 50
+# availability_domain_index = 0
+
