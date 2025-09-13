@@ -1,0 +1,26 @@
+tenancy_ocid     = "ocid1.tenancy.oc1..aaaa..."
+user_ocid        = "ocid1.user.oc1..aaaa..."
+fingerprint      = "aa:bb:cc:dd:..."
+private_key_path = "~/.oci/oci_api_key.pem"
+home_region      = "ap-singapore-1"
+
+landing_zone_name = "corp-lz"
+iam_admin_group_name = "corp-lz-admins"
+
+vcn_cidrs   = ["10.0.0.0/16"]
+spoke_cidrs = ["10.10.0.0/16","10.20.0.0/16"]
+dns_label   = "corp"
+
+allowed_bastion_cidrs = ["203.0.113.0/24"]
+kms_key_alias         = "corp-root-kek"
+
+budgets = [
+  { name = "lz-network", amount = 200, reset_period = "MONTHLY", compartment_key = "network" },
+  { name = "lz-shared",  amount = 500, reset_period = "MONTHLY", compartment_key = "shared"  }
+]
+
+log_retention_days = 180
+
+enable_oke_foundation        = true
+oke_worker_subnet_cidr       = "10.10.10.0/24"
+oke_api_endpoint_subnet_cidr = "10.10.20.0/28"
